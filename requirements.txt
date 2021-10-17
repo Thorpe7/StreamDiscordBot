@@ -1,2 +1,7 @@
 discord.py
 python-dotenv
+requests
+os
+datetime
+json
+asyncio

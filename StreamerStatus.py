@@ -1,6 +1,5 @@
 import requests
 import json
-import sys
 import os
 from requests import api
 from requests.api import post, request

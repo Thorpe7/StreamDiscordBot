@@ -1,1 +1,1 @@
-worker: StreamBot.py
+worker: python StreamBot.py

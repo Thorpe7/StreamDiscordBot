@@ -44,6 +44,13 @@ async def announce():
             pass
 
         await asyncio.sleep(1800)
+
+@bot.event
+async def on_message(message):
+    if message.author == bot.user:
+        return
+    if message.content.startswith('$status'):
+        await message.channel.send('StreamBot is Online.')
         
             
 

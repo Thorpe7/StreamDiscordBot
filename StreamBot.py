@@ -38,7 +38,7 @@ async def announce():
     while True:
         status = cyd.isLive()
         if status == "live" and alreadyLive =='no':
-            await channel.send("Cyd is now LIVE on Twitch :partying_face:\n https://www.twitch.tv/originalcyd")
+            await channel.send(os.environ.get("user_name") +" is now LIVE on Twitch :partying_face:\n " + os.environ.get("user_url"))
             alreadyLive = 'yes'
         if status != 'live' and alreadyLive == 'yes':
             alreadyLive = 'no'

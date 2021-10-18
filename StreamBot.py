@@ -5,6 +5,7 @@ import discord
 import os
 import datetime
 from discord import message
+from ConfigForConfig import configureJson
 
 from discord.message import flatten_handlers
 from StreamerStatus import Streamer
@@ -18,6 +19,7 @@ from discord.ext.commands import has_permissions
 # load env vars and streamer config
 load_dotenv()
 time = datetime.datetime.now
+configureJson()
 cyd = Streamer("config.json")
 cyd.getAccessToken()
 

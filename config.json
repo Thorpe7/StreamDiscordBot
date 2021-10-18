@@ -1,0 +1,1 @@
+{"url": "https://api.twitch.tv/helix/users/", "user_login": "user_login", "client_id": "client_id", "client_secret": "client_secret", "grant_type": "client_credentials", "access_token": "access_token"}
